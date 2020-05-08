@@ -1,8 +1,8 @@
 function save_list(path, list) {
-	sessionStorage.setItem(path, list);
+	sessionStorage.setItem(repo + path, list);
 }
 function load_list(path) {
-	return sessionStorage.getItem(path);
+	return sessionStorage.getItem(repo + path);
 }
 function get_list(path, target_ID)
 {
