@@ -4,7 +4,7 @@ self.addEventListener('install', function(event) {
 		caches.open(version).then(function(cache) {
 			return cache.addAll([
 				'/mamle/sw.js',
-				'/mamle/site/script.js?v4',
+				'/mamle/site/script.js?v5',
 				'/mamle/site/style.css?v2',
 				'/mamle/site/image/back.jpg',
 				'/mamle/site/image/portraits/1.svg',

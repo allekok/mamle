@@ -2,7 +2,7 @@ function save_list(path, list) {
 	sessionStorage.setItem(path, list);
 }
 function load_list(path) {
-	sessionStorage.getItem(path);
+	return sessionStorage.getItem(path);
 }
 function get_list(path, target_ID)
 {
