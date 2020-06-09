@@ -71,7 +71,7 @@ onclick='event.preventDefault();get_list("${back}", "main");'>&lsaquo; گەڕا�
 		pathNew = path + "/" + list[i];
 		href = pathNew.split("/").length < navLevel ? `#${pathNew}` : `${pathNew}`;
 		onClick = pathNew.split("/").length < navLevel ? `event.preventDefault();get_list("${pathNew}", "main");` : "";
-		list[i] = list[i].replace(/\.mp[34]|\.3gp/gi, '');
+		list[i] = list[i].replace(/\.mp[34]|\.3gp|\.m4[av]/gi, '');
 		list[i] = KurdishNumbers(list[i]);
 		html += `<a href='${href}' onclick='${onClick}'>&rsaquo; ${list[i]}</a>`;
 	}
