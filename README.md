@@ -13,4 +13,4 @@
 - چونکە ئەم وەشانە دوای نەمانی وەشانی ڕاستەقینە دەمێنێتەوە.
 ## ئاوێنەکانی‌تر
 - [خدر قادری](https://github.com/allekok/xdr-qadri)
-- [چەپکەگوڵ](https://github.com/allekok/chepke-gull)
+- [تاقەگوڵ](https://github.com/allekok/taqe-gull)
