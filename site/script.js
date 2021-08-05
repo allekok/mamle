@@ -63,7 +63,7 @@ function echo_list(list, target_ID)
 	if (back !== "")
 	{
 		html += `<a href='#${back}' style='font-weight:bold'
-onclick='event.preventDefault();get_list("${back}", "main");'>&lsaquo; گەڕانەوە</a>`;
+onclick='event.preventDefault();get_list("${back}", "main");'><i>&lsaquo;</i>گەڕانەوە</a>`;
 	}
 	
 	for (let i in list)
@@ -73,7 +73,7 @@ onclick='event.preventDefault();get_list("${back}", "main");'>&lsaquo; گەڕا�
 		onClick = pathNew.split("/").length < navLevel ? `event.preventDefault();get_list("${pathNew}", "main");` : "";
 		list[i] = list[i].replace(/\.mp[34]|\.3gp|\.m4[av]/gi, '');
 		list[i] = KurdishNumbers(list[i]);
-		html += `<a href='${href}' onclick='${onClick}'>&rsaquo; ${list[i]}</a>`;
+		html += `<a href='${href}' onclick='${onClick}'><i>&rsaquo;</i>${list[i]}</a>`;
 	}
 	
 	document.getElementById(target_ID).innerHTML = html;
